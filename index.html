@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia E-Bank | Asesoría en Línea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-patagonia: #004a99;
+            --rojo-patagonia: #e30613;
+            --gris-fondo: #f4f4f4;
+            --texto: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gris-fondo);
+            color: var(--texto);
+        }
+
+        /* Header Estilo Patagonia */
+        header {
+            background-color: #fff;
+            border-bottom: 4px solid var(--rojo-patagonia);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--azul-patagonia);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--rojo-patagonia);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 74, 153, 0.8), rgba(0, 74, 153, 0.8)), 
+                        url('https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        /* Contenido Principal */
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            border-top: 5px solid var(--azul-patagonia);
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            color: var(--azul-patagonia);
+            margin-top: 0;
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: var(--rojo-patagonia);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #b3050f;
+        }
+
+        .badge {
+            background: var(--azul-patagonia);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">BANCO <span>PATAGONIA</span></div>
+    <nav>
+        <span class="badge">E-Bank Personas</span>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Tu banco, donde estés.</h1>
+    <p>Conoce nuestro servicio de <strong>Asesoría en Línea</strong>. Expertos listos para ayudarte a gestionar tus finanzas sin moverte de casa.</p>
+    <a href="#" class="btn-primary">INGRESAR A E-BANK</a>
+</section>
+
+<div class="container">
+    <h2>Asesoría Digital 24/7</h2>
+    <p>En Patagonia E-Bank, hemos evolucionado para brindarte una experiencia más humana en un entorno digital. Nuestros asesores están disponibles para guiarte en cada paso.</p>
+    
+    <div class="grid">
+        <div class="card">
+            <h3>Gestión de Cuentas</h3>
+            <p>Recibe asistencia técnica para transferencias, pagos de servicios y configuración de claves de seguridad de forma inmediata.</p>
+        </div>
+        <div class="card">
+            <h3>Inversiones</h3>
+            <p>Consulta con especialistas sobre Plazos Fijos, Fondos Comunes de Inversión y compra de moneda extranjera.</p>
+        </div>
+        <div class="card">
+            <h3>Préstamos y Créditos</h3>
+            <p>Calcula tu préstamo personal o solicita una tarjeta de crédito con asesoramiento personalizado según tu perfil.</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; border-top: 1px solid #ddd; padding-top: 30px;">
+        <h3>¿Necesitas ayuda ahora?</h3>
+        <p>Inicia un chat seguro dentro de tu sesión de E-Bank o llámanos al 0810-888-8500.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Banco Patagonia S.A. Todos los derechos reservados. <br>
+    <small>El uso de este sitio implica la aceptación de los Términos y Condiciones.</small>
+</footer>
+
+</body>
+</html>
